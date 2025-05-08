@@ -152,19 +152,23 @@ footer{
         justify-content: space-between;
     }
     .stars{
-        margin: 1.5rem 12.8rem auto;
+        margin: 1.5rem 14.8rem auto;
     }
-    .ig-icons, .chart{
-        margin: 0 9.9rem;
+    .ig-icons{
+        margin: 0 11.9rem;
+    }
+    .chart{
+        width: 20rem;
+        margin: 0 5.9rem 1rem ;
     }
     .light-purple{
         max-height: 35rem;
     }
     .calendar{
-        margin: 3.9rem ;
+        margin: 5.9rem ;
     }
     .pics{
-        margin: 1.5rem ;
+        margin: 1.5rem 4rem ;
     }
 }
 
@@ -204,18 +208,22 @@ footer{
         width: 10rem; 
         margin: 0.5rem auto; 
     }
+    .stars{
+        margin: 1.5rem 3.8rem auto;
+    }
+    
     .grow-followers{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
     .pics{
-        margin: 2rem 0 0;
+        margin: 2rem 4rem ;
     }
     .ig-icons, .chart{
-        margin: 0 6.9rem;
+        margin: 0 10.9rem;
     }
     .calendar{
-        margin: 5.9rem auto;
+        margin: 7.9rem 3.8rem;
     }
 }

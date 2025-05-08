@@ -18,7 +18,7 @@ body {
     overflow: hidden;
 }
 .card h2{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: center;
 }
 .card p{
@@ -69,6 +69,10 @@ img {
 }
 .pics{
     margin: 2rem auto;
+}
+span{
+    color: hsl(39, 100%, 71%);
+    font-size: 2rem;
 }
 main{
     display: grid;

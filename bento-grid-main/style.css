@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.card{
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 2.5rem;
+    border-radius: 5px;
+    position:  relative;
+    min-width: 15rem;
+    min-height: 15rem;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+.card h2{
+    font-size: 1.8rem;
+    text-align: center;
+}
+.card p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.purple{
+    background-color: hsl(256, 67%, 59%);
+    color: hsl(0, 0%, 100%);
+    justify-content: space-evenly;
+}
+.light-purple{
+    background-color: hsl(254, 88%, 90%);
+    color: hsl(0, 0%, 7%);
+}
+.yellow{
+    background-color: hsl(39, 100%, 71%);
+    color: hsl(0, 0%, 100%);
+}
+.light-yellow{
+    background-color: hsl(31, 66%, 93%);
+    color: hsl(0, 0%, 7%);
+}
+.white{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 7%);
+}
+.grow-followers{
+    display: flex;
+    justify-content: space-between;
+}
+img {
+    width: 10.5rem;
+   
+}
+.stars{
+    width: 10rem;
+    margin: 1.4rem 8.8rem 0.1rem 8.8rem;
+}
+.ig-icons{
+    width: 16rem;
+    margin-left: 2.6rem;
+    
+}
+.chart{
+    width: 18rem;
+    margin: 0.8rem 2rem;
+}
+.pics{
+    margin: 2rem auto;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        "card1 card2 card2 card3"
+        "card1 card4 card5 card3"
+        "card6 card4 card5 card3"
+        "card6 card7 card8 card8";
+    gap: 1.7rem;
+    max-height: 80vh;
+    max-width: 70rem;
+    width: 100%;
+    margin: 0 auto;
+}
+.item1{
+    grid-area: card1;
+}
+.item2{
+    grid-area: card2;
+}
+.item3{
+    grid-area: card3;
+}
+.item4{
+    grid-area: card4;
+}   
+.item5{
+    grid-area: card5;
+}
+.item6{
+    grid-area: card6;
+}   
+.item7{
+    grid-area: card7;
+}
+.item8{
+    grid-area: card8;
+}
+footer{
+    
+    margin-top: 4rem;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+            "card2 card2"
+            "card4 card3"
+            "card5 card3"
+            "card7 card8"
+            "card1 card6"
+            "card1 card6"
+            ;
+        gap: 1.5rem;
+        max-width: 90%;
+        padding: 1.5rem;
+        max-height: 10rem; 
+    }
+    .card {
+        min-width: unset; 
+        max-height: 20rem;
+        padding: 2rem;
+    }
+    img {
+        width: 6rem;  
+        height: auto;
+    }
+    .stars, .ig-icons, .chart, .pics {
+        width: 10rem; 
+        margin: 0.5rem auto; 
+    }
+    .grow-followers{
+        display: flex;   
+        justify-content: space-between;
+    }
+    .stars{
+        margin: 1.5rem 12.8rem auto;
+    }
+    .ig-icons, .chart{
+        margin: 0 9.9rem;
+    }
+    .light-purple{
+        max-height: 35rem;
+    }
+    .calendar{
+        margin: 3.9rem ;
+    }
+    .pics{
+        margin: 1.5rem ;
+    }
+}
+
+
+@media (max-width: 767px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+            
+            "card2"
+            "card4"
+            "card5"
+            "card3"
+            "card6"
+            "card7"
+            "card1"
+            "card8";
+        gap: 1.2rem;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 1rem;
+        max-height: none;
+        overflow: visible;
+    }
+    .card {
+        max-width: 100%;
+        max-height: 20rem;
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+    img {
+        width: 10rem;  
+        height: auto;
+    }
+    .stars, .ig-icons, .chart, .pics {
+        width: 10rem; 
+        margin: 0.5rem auto; 
+    }
+    .grow-followers{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .pics{
+        margin: 2rem 0 0;
+    }
+    .ig-icons, .chart{
+        margin: 0 6.9rem;
+    }
+    .calendar{
+        margin: 5.9rem auto;
+    }
+}

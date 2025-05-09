@@ -3,9 +3,12 @@
     padding:0;
     box-sizing:border-box;
 }
-body {
+body,html {
+    min-height: 100vh;
     font-family: 'DM Sans', sans-serif; 
     font-weight: 400; 
+    display: flex;
+    flex-direction: column;
 }
 .card{
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -77,17 +80,17 @@ span{
 main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas: 
         "card1 card2 card2 card3"
         "card1 card4 card5 card3"
         "card6 card4 card5 card3"
         "card6 card7 card8 card8";
     gap: 1.7rem;
-    max-height: 80vh;
     max-width: 70rem;
     width: 100%;
-    margin: 0 auto;
+    margin: 2rem auto;
+    flex: 1;
 }
 .item1{
     grid-area: card1;
@@ -114,13 +117,14 @@ main{
     grid-area: card8;
 }
 footer{
-    
-    margin-top: 4rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem 0;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     main {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(5, auto);
         grid-template-areas: 
             "card2 card2"
             "card4 card3"
@@ -155,7 +159,7 @@ footer{
         margin: 1.5rem 14.8rem auto;
     }
     .ig-icons{
-        margin: 0 11.9rem;
+        margin: 0 9.9rem;
     }
     .chart{
         width: 20rem;
@@ -165,7 +169,7 @@ footer{
         max-height: 35rem;
     }
     .calendar{
-        margin: 5.9rem ;
+        margin: 0 4.3rem;
     }
     .pics{
         margin: 1.5rem 4rem ;
@@ -176,9 +180,8 @@ footer{
 @media (max-width: 767px) {
     main {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-rows: repeat(8, auto);
         grid-template-areas: 
-            
             "card2"
             "card4"
             "card5"
@@ -187,14 +190,14 @@ footer{
             "card7"
             "card1"
             "card8";
-        gap: 1.2rem;
+        gap: 1rem;
         max-width: 90%;
-        margin: 0 auto;
+        margin:  auto;
         padding: 1rem;
     }
     .card {
         max-width: 100%;
-        min-height: 20rem;
+        min-height: auto;
         margin: 0 auto;
         padding: 1.5rem;
     }
@@ -222,7 +225,7 @@ footer{
         margin: 0 10.9rem;
     }
     .calendar{
-        margin: 7.9rem 3.8rem;
+        margin: 0 3.8rem;
     }
     
 }

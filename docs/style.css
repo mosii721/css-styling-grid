@@ -3,12 +3,9 @@
     padding:0;
     box-sizing:border-box;
 }
-body,html {
-    min-height: 100vh;
+body{
     font-family: 'DM Sans', sans-serif; 
     font-weight: 400; 
-    display: flex;
-    flex-direction: column;
 }
 .card{
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -90,7 +87,7 @@ main{
     max-width: 70rem;
     width: 100%;
     margin: 2rem auto;
-    flex: 1;
+    
 }
 .item1{
     grid-area: card1;
@@ -136,7 +133,6 @@ footer{
         gap: 1.5rem;
         max-width: 90%;
         padding: 1.5rem;
-        max-height: 10rem; 
     }
     .card {
         min-width: unset; 
@@ -173,6 +169,11 @@ footer{
     }
     .pics{
         margin: 1.5rem 4rem ;
+    }
+    footer{
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem 0;
     }
 }
 
